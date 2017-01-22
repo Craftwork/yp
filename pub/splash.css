@@ -1,0 +1,44 @@
+	#splash::before {
+		background-color: #EEE;
+		/*background: url(./fon4.jpg) no-repeat center;
+		background-size: cover;*/
+		position: absolute;
+		content: " ";
+		z-index: -1;
+		width: 100%; height: 100%;
+		/* filter: invert(70%); */
+	}
+
+	#splash {
+		box-shadow: inset 0 0 20em #7B7B7B;
+	}
+
+	#splash p {
+		color: #AAA;
+		display: block;
+		margin: 0px;
+		width: 350px;
+		height: 300px;
+
+		font: bold 36pt/33px 'Roboto', sans-serif;
+		letter-spacing: -4px;
+		text-transform: lowercase;
+	}
+
+	#splash p .number {
+		font-size: smaller;
+		letter-spacing: -3px;
+	}
+
+	#splash .logo {
+		width: 15%;
+		margin-right: 60px;
+	}
+
+	#splash .brief {
+		color: #AD1E23;
+	}
+
+	#splash address p {
+		position: relative;
+	}

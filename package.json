@@ -1,0 +1,13 @@
+{
+  "name": "ypoint",
+  "version": "1.0.0",
+  "description": "Y-Point site",
+  "main": "start.js",
+  "author": "Ivan Hryshyn",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "node-static": "^0.7.9"
+  }
+}

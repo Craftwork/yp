@@ -1,0 +1,12 @@
+#portfolio {
+	color: #777;
+	background-color: #DDD;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 { color: #777 }
+
+@media screen and (orientation: portrait) {
+}
