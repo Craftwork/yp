@@ -1,12 +1,49 @@
 #portfolio {
-	color: #777;
-	background-color: #DDD;
+	background-color: #777;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 
-h2 { color: #777 }
+#portfolio h3 {
+	font-size: 2.5em;
+	text-shadow: 1px 1px 2px #522;
+	color: #EEE;
+	margin: 5px;
+	text-align: center;
+}
+
+#portfolio > .item {
+	width: 80%;
+	height: 80%;
+	background-color: #BBB;
+	padding: 20px;
+	border-radius: 2em;
+}
+
+#portfolio > .item {
+	width: 80%;
+	height: 80%;
+	background-color: #BBB;
+	padding: 20px;
+	border-radius: 2em;
+}
+
+#portfolio .preview .item,
+#portfolio .preview img {
+	width: 20%;
+	height: 100px;
+	border: 3px solid white;
+	object-fit: cover;
+	object-position: center;
+}
+
+#portfolio .preview .item + .item {
+	margin-left: 10px;
+}
 
 @media screen and (orientation: portrait) {
+	#portfolio .preview .desc {
+	}
 }
