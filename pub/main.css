@@ -1,13 +1,16 @@
 @import url('./fonts/fonts.css');
 @import url('splash.css');
 @import url('portfolio.css');
+@import url('clients.css');
 @import url('contacts.css');
 
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Roboto:400,500,700&subset=cyrillic,cyrillic-ext,latin-ext');
 
 html, body {
 	margin: 0px; padding: 0px;
 	height: 100%;
 	font-size: 16px;
+	font-family: 'PT Serif', serif;
 }
 
 header, section {
@@ -28,4 +31,9 @@ a {
 
 .appear {
 	display: none;
+}
+
+.number {
+	font-size: smaller;
+	letter-spacing: -3px;
 }

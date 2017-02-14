@@ -6,28 +6,30 @@
 </head>
 <body>
 
-<!-- 
 <header id="splash">
-	<img class="logo" src="/logo.svg" />
-	<p class="brief">
-		компанія<br />рекламного виробництва<br />у києві
-	</p>
-	<address>
-		<p><a href="#">
-			вул. Василя<br />Яна <span class="number">3/5</span><br /><span class="number">067 242 6316</span>
-		</a></p>
-	</address>
+	<img class="logo" src="logo.svg" />
+	<div>
+		<p class="brief">
+			компания<br />рекламного производства<br />в киеве
+		</p>
+		<address>
+			<p>
+				ул. Василия<br />Яна <span class="number">3/5</span><br />
+				<a href="tel:+3800672426316"><span class="number">067 242 6316</span></a>
+			</p>
+		</address>
+	<div>
 </header>
--->
 
 <section id="portfolio">
 	<div class="item">
 		<div class="screen">
-			<h3>~ FIZMAT ~</h3>
-			<div class="description appear">
-				<p>Lorem ipsum dolor sit amet, interpellastis Iuravi potest flens diffusa cella, indulgentia perrexit est Apollonius in rei finibus veteres hoc. Praesta enim materiam individuis qui.</p>
-				<p>Lorem ipsum dolor sit amet, interpellastis Iuravi potest flens diffusa cella, indulgentia perrexit est Apollonius in rei finibus veteres hoc. Praesta enim materiam individuis qui.</p>
-				<p>Lorem ipsum dolor sit amet, interpellastis Iuravi potest flens diffusa cella, indulgentia perrexit est Apollonius in rei finibus veteres hoc. Praesta enim materiam individuis qui.</p>
+			<div class="description">
+				<h3>FIZMAT</h3>
+				<hr />
+				<p>FIZMAT – это смарт-фитнес центр нового поколения, предоставляющий оптимальные условия для реализации человеческого потенциала в соответствии с его природой.</p>
+				<p>FIZMAT – это пространство, свободное от тренажеров и тяжелых атлетических снарядов, где каждое занятие посвящено непосредственному контакту с собственным телом.</p>
+				<p>FIZMAT – это целостный подход к тренировкам, который ставит во главу угла благополучие человека на всех уровнях жизни – физическом, социальном, душевном.</p>
 			</div>
 		</div>
 		<div class="preview">
@@ -39,28 +41,48 @@
 	</div>
 </section>
 
-<!--
+<section id="clients">
+	<div><img src="upload/logo/fizmat-logo.png" /></div>
+	<div><img src="upload/logo/beauteria-logo.jpg" /></div>
+	<div><img src="upload/logo/one-group-logo.png" /></div>
+	<div><img src="upload/logo/alchemist-logo.jpg" /></div>
+	<div><img src="upload/logo/ebsh-logo.jpg" /></div>
+</section>
+
 <section id="contacts">
 	<div id="gmap"></div>
+	<address>
+		ул. Василия Яна, 3/5<br />
+		<a href="tel:+3800672426316"><span class="number">067 242 6316</span></a>
+	</address>
 
 	<script type="text/javascript">
 		var Util = {
 			gmi: function() {
+				var pos = {lat: 50.4338, lng: 30.5042};
+
 				var map = new google.maps.Map(document.getElementById('gmap'), {
-					center: {lat: 50.4338, lng: 30.5042},
+					center: pos,
 					zoom: 18,
 					scrollwheel: false,
 					zoomControl: false,
 					streetViewControl: false,
 					mapTypeControl: false
 				});
+
+				var marker = new google.maps.Marker({
+					position: pos,
+					map: map,
+					icon: 'logo.svg'
+					// icon: 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+				});
 			}
 		}
+
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGcihLKgqQJQZnKj-5wGzkd7aCkYMW5uE&callback=Util.gmi" async defer></script>
 </section>
--->
 
 <!-- script type="text/javascript" src="./main.js"></script -->
 </body>

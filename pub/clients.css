@@ -1,0 +1,23 @@
+#clients {
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ddd;
+	overflow: hidden;
+}
+
+#clients > div {
+	width: 30%;
+	min-width: 200px;
+	height: 200px;
+	line-height: 170px;
+	text-align: center;
+	background-color: #aaa;
+	box-shadow: 0 0 8px #555;
+}
+
+
+#clients img {
+	width: 150px;
+	vertical-align: middle;
+}

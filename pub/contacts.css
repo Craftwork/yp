@@ -1,10 +1,26 @@
-	#contacts {
-		color: white;
-		background-color: #778;
-		justify-content: flex-start;
-	}
+#contacts {
+	color: white;
+	background-color: #210;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
 
-	#gmap {
-		align-self: left;
-		width: 70%; height: 100%;
-	}
+#gmap {
+	width: 80%;
+	height: 60%;
+	margin: 0 2em 3em 2em;
+	flex-grow: 1;
+	border: 4px ridge #fff;
+}
+
+#contacts address {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#contacts address .number {
+	letter-spacing: inherit;
+}
