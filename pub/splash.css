@@ -11,7 +11,11 @@
 	margin: 0px;
 	width: 350px;
 
-	font: bold 36pt/33px 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 36pt;
+	line-height: 33px;
+	font-family: 'Roboto', sans-serif;
+
 	letter-spacing: -5px;
 	text-transform: lowercase;
 	text-shadow: 1px 0px 5px #555;
@@ -25,9 +29,11 @@
 
 #splash .brief {
 	color: #AD1E23;
+	margin-bottom: 1em;
 }
 
 #splash address p {
+	font-style: normal;
 	color: #fff;
 	position: relative;
 }
@@ -39,11 +45,11 @@
 	}
 
 	#splash .logo {
-		width: 50%;
+		width: 40%;
 	}
 
 	#splash > div {
-		margin-top: -70px;
+		margin-top: 2em;
 	}
 
 	#splash p {

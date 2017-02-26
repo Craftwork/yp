@@ -1,26 +1,61 @@
 #contacts {
-	color: white;
+	color: #CC5;
 	background-color: #210;
-	justify-content: flex-start;
+
+	justify-content: space-around;
 	align-items: center;
-	align-content: center;
+	align-content: flex-start;
 	flex-wrap: wrap;
 }
 
 #gmap {
-	width: 80%;
-	height: 60%;
-	margin: 0 2em 3em 2em;
+	min-width: 80%;
+	height: 50%;
+	margin: 2em 2em 1em 2em;
 	flex-grow: 1;
-	border: 4px ridge #fff;
+	border: 5px solid #aaa;
+}
+
+#navigators {
+	width: 100%;
+	text-align: center;
+	margin: 1em 0em 2em;
+}
+
+#navigators a {
+	font-size: 5em;
+	background-color: #CC5;
+	color: #210;
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	line-height: 1.2em;
+	border-radius: 0.6em;
+}
+
+#navigators a + a {
+	margin-left: 10%;
 }
 
 #contacts address {
-	width: 100%;
-	text-align: center;
-	font-size: 1.5em;
+	width: 42%;
+	text-align: left;
+	font-size: 3.5vw;
+	vertical-align: baseline;
+}
+
+#contacts address a {
+	vertical-align: baseline;
 }
 
 #contacts address .number {
 	letter-spacing: inherit;
+}
+
+@media screen and (orientation: portrait) {
+	#contacts address {
+		width: 60%;
+		text-align: center;
+		font-size: 5vw;
+	}
 }
